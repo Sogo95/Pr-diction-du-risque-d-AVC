@@ -16,14 +16,22 @@ st.write("Cette application est destinée à éffectuer la prévision moyenne an
 
 
 # Définir une fonction de prédiction
-def predict_CO2(age1,bmi1, glucose1):
+def predict_AVC(sex1, age1, hypertension1, heart_disease1, ever_married1, work_type1, Residence_type1, avg_glucose_level1, bmi1, smoking_status1):
     new_data = [[
-        age1,
-        bmi1,
-        glucose1
+        sex1,
+        age1, 
+        hypertension1, 
+        heart_disease1, 
+        ever_married1, 
+        work_type1, 
+        Residence_type1, 
+        avg_glucose_level1, 
+        bmi1, 
+        smoking_status1
     ]]
+   
 
-    colonnes=['age', 'bmi', 'glucose']
+    colonnes=['sex','age', 'hypertension', 'heart_disease', 'ever_married', 'work_type', 'Residence_type', 'avg_glucose_level', 'bmi', 'smoking_status']
     new_data = pd.DataFrame(new_data, columns=colonnes)
 
     prediction = model.predict(new_data)
@@ -36,5 +44,5 @@ glucose1 = st.number_input('Taux de  de glucose moyen')
 
 # Bouton pour effectuer la prédiction
 if st.button('Prédire'):
-    prediction = predict_CO2(age1, bmi1, bmi1)
+    prediction = predict_AVC(age1, bmi1, bmi1)
     st.success(f'Prédiction de CO2: {prediction[0]}')
