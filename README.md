@@ -12,4 +12,4 @@ Méthodologie :
 •	Le Random Forest a été utilisé et une prédiction sur l’ensemble des données test a été effectué.
 
 
-Notre modèle a été déployé et est exploitable sur ce lien
+Notre modèle a été déployé et est exploitable sur ce lien: https://sogo95-pr-diction-du-risque-d-avc-streamlit-lhpj8n.streamlit.app/
