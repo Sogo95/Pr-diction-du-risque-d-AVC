@@ -1,7 +1,9 @@
+
 import streamlit as st
 import pandas as pd
 from joblib import load
 from sklearn.preprocessing import LabelEncoder
+
 
 # Chargement des données (Facultatif)
 #df = pd.read_csv('data.csv', sep=';', decimal=',', encoding='ISO-8859-1')
@@ -13,8 +15,7 @@ model = load('modele.joblib')
 # Titre de l'application
 st.title("Prédiction de risque d'avoir un AVC")
 st.subheader('Auteur: SOGO Armel Emmanuel')
-st.write("Selon l’Organisation Mondiale de la Santé (OMS) Chaque année, 15 millions de personnes font un accident vasculaire cérébral (AVC) : 5 millions d'entre elles meurent et 5 millions souffrent d'une incapacité permanente, ce qui représente un poids pour la famille et la communauté. La suspicion du diagnostic d'AVC repose en règle générale sur la clinique avec deux éléments clés à savoir un déficit neurologique focalisé et une apparition brutale. L'examen neurologique confirme le déficit, en précise la topographie et permet d'évoquer le territoire atteint. C’est dans le souci d’éviter les erreurs de diagnostiques, de reduire la charge de travail des cliniciens et de minimiser les les coût supportés par les patients que nous proposons un modèle de Machine Learning qui détectera le risque pour un patient donné d'avoir un AVC en fonction de certaines caractéristiques. \
-L'objectif de notre recherche est donc de prédire le risque pour un patient donné d'avoir un AVC parmi les cas positif réel.")
+st.write("Selon l’Organisation Mondiale de la Santé (OMS) Chaque année, 15 millions de personnes font un accident vasculaire cérébral (AVC) : 5 millions d'entre elles meurent et 5 millions souffrent d'une incapacité permanente, ce qui représente un poids pour la famille et la communauté. La suspicion du diagnostic d'AVC repose en règle générale sur la clinique avec deux éléments clés à savoir un déficit neurologique focalisé et une apparition brutale. L'examen neurologique confirme le déficit, en précise la topographie et permet d'évoquer le territoire atteint. C’est dans le souci d’éviter les erreurs de diagnostiques, de réduire la charge du travail des cliniciens et de minimiser les coûts supportés par les patients que nous proposons un modèle de Machine Learning qui détectera le risque pour un patient donné d’avoir un AVC sur les patients positif en fonction de certaines caractéristiques. ")
 
 
 
